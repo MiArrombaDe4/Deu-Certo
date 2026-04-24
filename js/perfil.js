@@ -26,17 +26,22 @@ window.mostrarTela = function(tela) {
     `;
   }
 
-  if (tela === "roupas") {
-    conteudo.innerHTML = `
-      <div class="tela">
-        <div class="roupas-box">
-          ${perfil.roupas.map(r => `<img src="${r}">`).join("")}
-        </div>
+ if (tela === "roupas") {
+  conteudo.innerHTML = `
+    <div class="roupas-box">
+      ${perfil.roupas.map(r => `<img src="${r}">`).join("")}
+    </div>
 
-        <img src="${perfil.imagens.perfil}" class="personagem">
-      </div>
-    `;
-  }
+    <div class="roupa-info">
+      <strong>Default Outfit</strong>
+      <p>Roupa padrão de ${perfil.nome}.</p>
+
+      <button class="btn-variacoes">Variações</button>
+    </div>
+
+    <img src="${perfil.imagens.perfil}" class="personagem">
+  `;
+}
 };
 
 // inicia na tela perfil
