@@ -1,0 +1,25 @@
+body {
+  background: black;
+  color: #39ff14;
+  font-family: Arial;
+  text-align: center;
+}
+
+#cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #1a0011;
+  border: 2px solid #ff00aa;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 10px;
+}

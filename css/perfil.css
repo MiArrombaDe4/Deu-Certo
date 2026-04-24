@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  font-family: Arial;
+}
+
+.container {
+  display: flex;
+}
+
+.menu {
+  width: 150px;
+  background: #2a0d16;
+  padding: 10px;
+}
+
+.menu button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  background: #a03a4a;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tela {
+  flex: 1;
+  position: relative;
+}
+
+.personagem {
+  position: absolute;
+  right: 50px;
+  bottom: 0;
+  height: 90%;
+}
+
+.info-box, .roupas-box {
+  background: #c2a07f;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
